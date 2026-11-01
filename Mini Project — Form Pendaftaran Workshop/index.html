@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praktikum DOM dan Event</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+    <hr style="margin: 30px 0;">
+  <!-- Mini Project: Form Pendaftaran Workshop -->
+  <section class="card-workshop">
+    <h2>Mini Project: Form Pendaftaran Workshop</h2>
+    <form id="formWorkshop" novalidate>
+      <div class="form-group">
+        <label for="namaWorkshop">Nama Lengkap:</label>
+        <input type="text" id="namaWorkshop" placeholder="Masukkan nama lengkap">
+        <small>Jumlah karakter: <span id="counterWorkshop">0</span></small>
+      </div>
+
+      <div class="form-group">
+        <label for="emailWorkshop">Email:</label>
+        <input type="email" id="emailWorkshop" placeholder="contoh@domain.com">
+      </div>
+
+      <div class="form-group">
+        <label for="sesiWorkshop">Pilih Sesi Workshop:</label>
+        <select id="sesiWorkshop">
+          <option value="">-- Pilih Sesi --</option>
+          <option value="Frontend Web Development">Frontend Web Development (Pagi)</option>
+          <option value="Backend Engineering">Backend Engineering (Siang)</option>
+          <option value="UI/UX Design Masterclass">UI/UX Design Masterclass (Malam)</option>
+        </select>
+      </div>
+
+      <!-- Ringkasan Sesi Real-time -->
+      <div id="ringkasanSesi" class="info-box">
+        Sesi yang dipilih: <em>Belum memilih</em>
+      </div>
+
+      <div class="button-group">
+        <button type="submit" class="btn-submit">Daftar Workshop</button>
+        <button type="button" id="btnResetWorkshop" class="btn-reset">Reset Form</button>
+      </div>
+    </form>
+
+    <!-- Pesan Feedback Status -->
+    <p id="pesanWorkshop" aria-live="polite" class="feedback-msg"></p>
+  </section>

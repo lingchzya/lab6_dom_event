@@ -1,0 +1,10 @@
+.highlight {
+  color: #173f75;
+  background-color: #e6f1ff;
+  border-left: 4px solid #3478c8;
+  padding: 12px;
+}
+
+.teks-besar { 
+  font-size: 1.4rem; 
+}
